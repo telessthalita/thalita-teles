@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const hardSkills = [
   "JavaScript", "Python", "SQL", "React", "Vue", "Node.js", "C#", 
   "APIs", "Git/GitHub", "Automação", "MultiCloud (em andamento)", 
-  "DevOps (em andamento)", "Scrum", "IA Generativa"
+  "DevOps (em andamento)", "Scrum", "IA Generativa", "Engenharia de Prompt"
 ];
 
 const softSkills = [

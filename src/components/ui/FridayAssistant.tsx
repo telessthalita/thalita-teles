@@ -138,7 +138,7 @@ const FridayAssistant = () => {
               className="mt-3 w-full"
               onClick={handleChatOpen}
             >
-              Converse com a TT de 2030
+              Eu sou a Friday 
             </Button>
           </motion.div>
         )}

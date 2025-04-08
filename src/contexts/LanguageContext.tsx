@@ -25,7 +25,7 @@ const translations = {
     
     // Hero
     "hero.subtitle": "Desenvolvedora Fullstack | Futura Engenheira de IA",
-    "hero.description": "Transformando ideias em código e construindo soluções inteligentes para o futuro digital.",
+    "hero.description": "“Deusa da Tecnologia” foi como uma amiga me descreveu ao me ver criando com código e conversando com minha IA pessoal. Pode ter sido só uma brincadeira — mas traduz bem minha essência. Meu foco está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, pra mim, é mais do que programar: é resolver com propósito.",
     "hero.btn.path": "Meu Caminho",
     "hero.btn.projects": "Projetos",
     
@@ -52,7 +52,7 @@ const translations = {
     "friday.suggestions.learning": "Como ela aprendeu a programar?",
     "friday.suggestions.work": "Ela trabalha com o quê hoje?",
     "friday.suggestions.proud": "Friday, qual projeto você mais se orgulha?",
-    "friday.chat.title": "TT do Futuro (2030)",
+    "friday.chat.title": "Friday",
     "friday.chat.placeholder": "Escreva sua mensagem...",
     "friday.chat.send": "Enviar",
     "friday.chat.example": "Este é apenas um exemplo de interação.",

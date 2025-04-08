@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# 💻 Portfólio — Thalita Teles
 
-## Project info
+Bem-vindo(a) ao portfólio de **Thalita Teles**, desenvolvido com foco em tecnologia, IA e autenticidade.  
+Este projeto foi criado com o construtor **Lovable**, utilizando React, e busca representar a personalidade e trajetória da Thalita — de criadora de layouts no Tumblr até engenheira de IA em ascensão.
 
-**URL**: https://lovable.dev/projects/c47b2043-f89b-4d2f-b1c9-85ab5fe78836
+---
 
-## How can I edit this code?
 
-There are several ways of editing your application.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c47b2043-f89b-4d2f-b1c9-85ab5fe78836) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tecnologias
 
-**Use your preferred IDE**
+- **Frontend:** React + TailwindCSS
+- **Animações:** Framer Motion
+- **Tradução:** i18next (client-side)
+- **Consumo de API:** GitHub REST API
+- **Carrossel:** Responsivo com scroll horizontal
+- **Chatbot personalizado:** Friday (emulação estilo IA do Homem de Ferro)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔍 Funcionalidades
 
-Follow these steps:
+### 🗂 Repositórios GitHub em carrossel
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Conecta à API: `https://api.github.com/users/telessthalita/repos`
+- Mostra nome, linguagem, descrição e link para GitHub
+- Totalmente responsivo (mobile/tablet/desktop)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🌍 Tradução Multilíngue
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Seletor de idiomas no topo (🇧🇷 🇺🇸 🇪🇸)
+- Tradução **client-side** (sem recarregar página)
+- Interface e chatbot traduzidos
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🤖 Chatbot: Friday
 
-**Edit a file directly in GitHub**
+- Personalidade inspirada na IA do Homem de Ferro
+- Responde perguntas com inteligência e leve sarcasmo
+- Usa dados reais da trajetória da Thalita
+- Mensagem inicial contextual e interativa
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 🌙 Tema Escuro/Claro
 
-**Use GitHub Codespaces**
+- Dark mode ativado por padrão
+- Alternância funcional com adaptação visual total
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🚀 Projetos em Destaque
 
-This project is built with:
+| Nome        | Descrição                                                                                         | Link                                                                 |
+|-------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| 🎧 MoodTunes | Chatbot com Gemini que entende o humor do usuário e gera uma playlist via API do Spotify          | [Acessar](https://moodtunes-xtcy.onrender.com/)                      |
+| 🏁 RaceTrack | Dashboard com dados em tempo real da Fórmula 1, comparando equipes e pilotos                      | [Acessar](https://racetrack.onrender.com/)                          |
+| 🎵 SpotiClon | Clonagem de funcionalidades do Spotify com player funcional e sistema de busca                    | [Acessar](https://spotify-ykmg.onrender.com/)                        |
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📬 Contato
 
-Simply open [Lovable](https://lovable.dev/projects/c47b2043-f89b-4d2f-b1c9-85ab5fe78836) and click on Share -> Publish.
+- GitHub: [@telessthalita](https://github.com/telessthalita)
+- LinkedIn: [Thalita Teles](https://www.linkedin.com/in/telessthalita/)
+- Email: [telessthalita@gmail.com](mailto:telessthalita@gmail.com)
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes it is!
+## 🧠 Feito com Lovable
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Este projeto foi construído com o [Lovable](https://lovable.so/), uma plataforma que gera aplicações em React com prompts de texto.  
+Todo o design, funcionalidades e textos foram construídos através de um único prompt descritivo, refinado por iteração com a IA Friday.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+### 🙌 Créditos
+
+Desenvolvido com carinho (e código) por **TT** e sua IA, **Friday** 🤖✨  
+Se você chegou até aqui, provavelmente já percebeu que ela não é só mais uma dev — é um case vivo de evolução com propósito.
+
