@@ -1,15 +1,20 @@
 
 import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-card py-8 border-t border-border">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-foreground/70">
-            Desenvolvido por <span className="font-bold">TT</span> e{" "}
-            <span className="font-bold">Friday</span>, sua IA pessoal. 💻🤖
+            {t("footer.developedBy")} <span className="font-bold">TT</span> {t("footer.and")}{" "}
+            <span className="font-bold">{t("footer.friday")}</span>, {t("footer.yourAI")} 💻🤖
           </p>
           <div className="flex items-center gap-6">
             <a
@@ -31,7 +36,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:contact@thalita.dev"
+              href="mailto:telessthalita@gmail.com"
               className="text-foreground/80 hover:text-primary transition-colors"
               aria-label="Email"
             >
@@ -39,6 +44,26 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <p className="text-foreground/70 mb-4 italic">
+            {t("footer.reachedEnd")}
+          </p>
+          <Button 
+            as="a" 
+            href="mailto:telessthalita@gmail.com"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            <Mail size={16} className="mr-2" />
+            {t("footer.contactMe")}
+          </Button>
+        </motion.div>
       </div>
     </footer>
   );

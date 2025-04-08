@@ -35,7 +35,7 @@ const ThemeToggle = () => {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className="absolute inset-0 flex items-center justify-center"
       >
-        {isDarkMode ? <Moon size={18} /> : <Sun size={18} />}
+        {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
       </motion.div>
     </Button>
   );

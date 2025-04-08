@@ -1,13 +1,16 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Moon, Sun, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,36 +42,40 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           <button
             onClick={() => scrollToSection("about")}
             className="text-foreground/80 hover:text-primary transition-colors"
           >
-            Meu Caminho
+            {t("nav.about")}
           </button>
           <button
             onClick={() => scrollToSection("skills")}
             className="text-foreground/80 hover:text-primary transition-colors"
           >
-            Habilidades
+            {t("nav.skills")}
           </button>
           <button
             onClick={() => scrollToSection("projects")}
             className="text-foreground/80 hover:text-primary transition-colors"
           >
-            Projetos
+            {t("nav.projects")}
           </button>
           <button
             onClick={() => scrollToSection("github")}
             className="text-foreground/80 hover:text-primary transition-colors"
           >
-            GitHub
+            {t("nav.github")}
           </button>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <LanguageSelector />
+            <ThemeToggle />
+          </div>
         </nav>
 
         {/* Mobile Navigation Button */}
         <div className="flex md:hidden items-center gap-4">
+          <LanguageSelector />
           <ThemeToggle />
           <Button
             variant="ghost"
@@ -95,25 +102,25 @@ const Navbar = () => {
               onClick={() => scrollToSection("about")}
               className="py-2 px-4 text-left hover:bg-primary/10 rounded-md transition-colors"
             >
-              Meu Caminho
+              {t("nav.about")}
             </button>
             <button
               onClick={() => scrollToSection("skills")}
               className="py-2 px-4 text-left hover:bg-primary/10 rounded-md transition-colors"
             >
-              Habilidades
+              {t("nav.skills")}
             </button>
             <button
               onClick={() => scrollToSection("projects")}
               className="py-2 px-4 text-left hover:bg-primary/10 rounded-md transition-colors"
             >
-              Projetos
+              {t("nav.projects")}
             </button>
             <button
               onClick={() => scrollToSection("github")}
               className="py-2 px-4 text-left hover:bg-primary/10 rounded-md transition-colors"
             >
-              GitHub
+              {t("nav.github")}
             </button>
             <div className="flex gap-4 mt-2 px-4">
               <a
@@ -133,7 +140,7 @@ const Navbar = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:contact@thalita.dev"
+                href="mailto:telessthalita@gmail.com"
                 className="text-foreground/80 hover:text-primary transition-colors"
               >
                 <Mail size={20} />

@@ -2,8 +2,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -24,10 +27,10 @@ const Hero = () => {
             <span className="gradient-text">Thalita Tees</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-foreground/80 font-light mb-8">
-            Desenvolvedora Fullstack | Futura Engenheira de IA
+            {t("hero.subtitle")}
           </h2>
           <p className="text-muted-foreground mb-10 max-w-2xl">
-            Transformando ideias em código e construindo soluções inteligentes para o futuro digital.
+            {t("hero.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
@@ -35,7 +38,7 @@ const Hero = () => {
               onClick={() => scrollToSection("about")}
               className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
-              Meu Caminho
+              {t("hero.btn.path")}
             </Button>
             <Button
               size="lg"
@@ -43,7 +46,7 @@ const Hero = () => {
               onClick={() => scrollToSection("projects")}
               className="border-primary text-foreground hover:bg-primary/10"
             >
-              Projetos
+              {t("hero.btn.projects")}
             </Button>
           </div>
         </motion.div>
