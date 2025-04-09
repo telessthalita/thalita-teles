@@ -21,19 +21,22 @@ const About = () => {
             <div className="bg-background p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4 text-primary">Minha História</h3>
               <p className="text-foreground/80 leading-relaxed">
-                Desde cedo, aprendi a me reinventar e buscar novas formas de crescer. 
-                A tecnologia sempre foi meu refúgio e inspiração, desde os jogos que 
-                me ensinaram estratégia até o desenvolvimento de software. Minha missão 
-                é transformar ideias em soluções eficientes e escaláveis.
+                Desde cedo, aprendi a me virar, me reinventar e transformar obstáculos em impulso.
+
+                A tecnologia sempre foi meu refúgio e meu laboratório de ideias — dos jogos que despertaram meu lado estratégico até o código, onde descobri que posso criar coisas que antes só existiam na minha cabeça.
+
+                Tenho paixão por inovação. Por explorar possibilidades novas, pensar fora da caixa e construir soluções que vão além do óbvio.
+
+                Pra mim, desenvolver é isso: imaginar o que ainda não existe — e depois, fazer acontecer.
               </p>
             </div>
             
             <div className="bg-background p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4 text-primary">Meu Propósito</h3>
               <p className="text-foreground/80 leading-relaxed">
-                Acredito que a tecnologia não é apenas código, mas um meio para resolver
-                problemas reais. Meu objetivo é construir soluções inteligentes, intuitivas
-                e impactantes, combinando inovação, eficiência e colaboração.
+                A tecnologia, pra mim, nunca foi só sobre código — é uma ponte entre ideias e impacto real.
+                Quero construir soluções que façam sentido, que desafiem o comum e tragam inovação de verdade.
+                Meu foco está em criar com propósito: unir inteligência, intuição e colaboração pra transformar o que parece impossível em realidade.
               </p>
             </div>
           </div>

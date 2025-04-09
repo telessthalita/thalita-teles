@@ -30,7 +30,13 @@ const Hero = () => {
             {t("hero.subtitle")}
           </h2>
           <p className="text-muted-foreground mb-10 max-w-2xl">
-            {t("hero.description")}
+            Sou movida pela ideia de que tecnologia só faz sentido quando aproxima, simplifica e transforma realidades.
+
+            Gosto de criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem o digital mais acessível e significativo no dia a dia.
+
+            Desenvolver, pra mim, é mais do que programar — é resolver com propósito, visão e empatia.
+
+            Uma vez me chamaram de "Deusa da Tecnologia" depois de me ver criando com código e conversando com minha IA pessoal. Talvez tenha sido só uma brincadeira… mas admito: representa bem minha essência.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button

@@ -85,7 +85,7 @@ const FridayAssistant = () => {
       const lowerCaseInput = inputValue.toLowerCase();
       
       if (lowerCaseInput.includes("primeiro projeto") || lowerCaseInput.includes("first project")) {
-        responseContent = t("friday.chat.response.first");
+        responseContent = "O primeiro projeto da Thalita com IA foi o MoodTunes, que usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa.";
       } else if (lowerCaseInput.includes("aprendeu") || lowerCaseInput.includes("learn") || lowerCaseInput.includes("programar") || lowerCaseInput.includes("code")) {
         responseContent = t("friday.chat.response.learning");
       } else if (lowerCaseInput.includes("trabalha") || lowerCaseInput.includes("work")) {
@@ -139,7 +139,7 @@ const FridayAssistant = () => {
               className="mt-3 w-full"
               onClick={handleChatOpen}
             >
-              {t("friday.chat.talkToFriday")}
+              Friday
             </Button>
           </motion.div>
         )}
@@ -210,7 +210,7 @@ const FridayAssistant = () => {
                         setMessages(prevMessages => [
                           ...prevMessages, 
                           { content: t("friday.suggestions.first"), isUser: true },
-                          { content: t("friday.chat.response.first"), isUser: false }
+                          { content: "O primeiro projeto da Thalita com IA foi o MoodTunes, que usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa.", isUser: false }
                         ]);
                       }}
                     >
