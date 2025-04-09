@@ -39,8 +39,7 @@ const FridayAssistant = () => {
     "Olá! Sou a Friday, a IA pessoal da Thalita.",
     "Thalita está trabalhando com IA generativa!",
     "Quer saber mais sobre os projetos da TT?",
-    "A Thalita está aprendendo engenharia de IA!",
-    "Você sabia que a TT adora tecnologia desde criança?",
+    "A Thalita adora tecnologia desde criança!",
     "Posso te ajudar a conhecer mais sobre o trabalho da Thalita!",
   ];
 
@@ -93,6 +92,8 @@ const FridayAssistant = () => {
         responseContent = t("friday.chat.response.work");
       } else if (lowerCaseInput.includes("orgulha") || lowerCaseInput.includes("proud")) {
         responseContent = t("friday.chat.response.proud");
+      } else if (lowerCaseInput.includes("deusa") || lowerCaseInput.includes("goddess") || lowerCaseInput.includes("tecnologia") || lowerCaseInput.includes("technology")) {
+        responseContent = "\"Deusa da Tecnologia\" foi como uma amiga descreveu a Thalita ao vê-la criando com código e conversando comigo. Pode ter sido só uma brincadeira — mas traduz bem a essência dela. O foco dela está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, para ela, é mais do que programar: é resolver com propósito.";
       } else {
         // Default response for other questions
         responseContent = "Hmm, isso é uma pergunta interessante! Vou consultar meus dados e te responder em breve. Enquanto isso, que tal perguntar sobre a experiência da Thalita com IA ou como ela começou a programar?";
@@ -138,7 +139,7 @@ const FridayAssistant = () => {
               className="mt-3 w-full"
               onClick={handleChatOpen}
             >
-              Eu sou a Friday 
+              {t("friday.chat.talkToFriday")}
             </Button>
           </motion.div>
         )}

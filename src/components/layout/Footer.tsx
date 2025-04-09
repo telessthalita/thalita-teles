@@ -36,14 +36,14 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-            href="mailto:telessthalita@gmail.com"
-            className="text-foreground/80 hover:text-primary transition-colors"
-            aria-label="Enviar email para Thalita Teles"
-            target="_blank"
-            rel="noopener noreferrer"
+              href="mailto:telessthalita@gmail.com"
+              className="text-foreground/80 hover:text-primary transition-colors"
+              aria-label="Enviar email para Thalita Teles"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Mail size={20} />
-              </a>
+            </a>
           </div>
         </div>
         
@@ -57,6 +57,12 @@ const Footer = () => {
           <p className="text-foreground/70 mb-4 italic">
             {t("footer.reachedEnd")}
           </p>
+          <Button
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            onClick={() => window.location.href = "mailto:telessthalita@gmail.com"}
+          >
+            <Mail className="mr-2" size={16} /> {t("footer.contactMe")}
+          </Button>
         </motion.div>
       </div>
     </footer>

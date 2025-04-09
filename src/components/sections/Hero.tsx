@@ -24,7 +24,7 @@ const Hero = () => {
           className="max-w-3xl mx-auto text-center md:text-left"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
-            <span className="gradient-text">Thalita Tees</span>
+            <span className="gradient-text">Thalita Teles</span>
           </h1>
           <h2 className="text-xl md:text-2xl text-foreground/80 font-light mb-8">
             {t("hero.subtitle")}
