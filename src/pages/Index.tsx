@@ -11,6 +11,13 @@ import GitHubProjects from "@/components/sections/GitHubProjects";
 import FridayAssistant from "@/components/ui/FridayAssistant";
 
 const Index = () => {
+  // Força o tema escuro ao carregar a página
+  React.useEffect(() => {
+    document.documentElement.classList.remove("light");
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

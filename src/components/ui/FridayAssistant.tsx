@@ -37,8 +37,8 @@ const FridayAssistant = () => {
   // Predefined phrases that show up in the bubble
   const getPhrases = () => [
     "Olá! Sou a Friday, a IA pessoal da Thalita.",
-    "Thalita está trabalhando com IA generativa!",
-    "Quer saber mais sobre os projetos da TT?",
+    "A Thalita desenvolveu projetos incríveis!",
+    "Quer saber mais sobre o MoodTunes?",
     "A Thalita adora tecnologia desde criança!",
     "Posso te ajudar a conhecer mais sobre o trabalho da Thalita!",
   ];
@@ -77,26 +77,42 @@ const FridayAssistant = () => {
     setMessages(prevMessages => [...prevMessages, newMessage]);
     setInputValue("");
 
-    // Generate response based on predefined questions
+    // Generate response based on predefined questions and keywords
     setTimeout(() => {
       let responseContent = "";
-
-      // Simple response matching for the suggested questions
       const lowerCaseInput = inputValue.toLowerCase();
       
-      if (lowerCaseInput.includes("primeiro projeto") || lowerCaseInput.includes("first project")) {
-        responseContent = "O primeiro projeto da Thalita com IA foi o MoodTunes, que usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa.";
-      } else if (lowerCaseInput.includes("aprendeu") || lowerCaseInput.includes("learn") || lowerCaseInput.includes("programar") || lowerCaseInput.includes("code")) {
-        responseContent = t("friday.chat.response.learning");
-      } else if (lowerCaseInput.includes("trabalha") || lowerCaseInput.includes("work")) {
-        responseContent = t("friday.chat.response.work");
-      } else if (lowerCaseInput.includes("orgulha") || lowerCaseInput.includes("proud")) {
-        responseContent = t("friday.chat.response.proud");
-      } else if (lowerCaseInput.includes("deusa") || lowerCaseInput.includes("goddess") || lowerCaseInput.includes("tecnologia") || lowerCaseInput.includes("technology")) {
-        responseContent = "\"Deusa da Tecnologia\" foi como uma amiga descreveu a Thalita ao vê-la criando com código e conversando comigo. Pode ter sido só uma brincadeira — mas traduz bem a essência dela. O foco dela está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, para ela, é mais do que programar: é resolver com propósito.";
-      } else {
-        // Default response for other questions
-        responseContent = "Hmm, isso é uma pergunta interessante! Vou consultar meus dados e te responder em breve. Enquanto isso, que tal perguntar sobre a experiência da Thalita com IA ou como ela começou a programar?";
+      // Check for keywords about MoodTunes or projects
+      if (lowerCaseInput.includes("primeiro projeto") || 
+          lowerCaseInput.includes("moodtunes") || 
+          lowerCaseInput.includes("ia") || 
+          lowerCaseInput.includes("mood") || 
+          lowerCaseInput.includes("gemini") ||
+          lowerCaseInput.includes("spotify")) {
+        responseContent = "O MoodTunes foi o primeiro projeto da Thalita com IA. Ela usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa. Você costuma usar IA no seu dia a dia também?";
+      } 
+      // Learning programming
+      else if (lowerCaseInput.includes("aprendeu") || 
+               lowerCaseInput.includes("programar") || 
+               lowerCaseInput.includes("começou") ||
+               lowerCaseInput.includes("código")) {
+        responseContent = "Thalita começou a programar aos 16 anos, explorando HTML e CSS por curiosidade. A paixão por resolver problemas a levou a aprofundar os estudos de forma autodidata, antes mesmo de iniciar a faculdade. O que te interessa mais no mundo do desenvolvimento?";
+      } 
+      // About "Deusa da Tecnologia"
+      else if (lowerCaseInput.includes("deusa") || 
+               lowerCaseInput.includes("tecnologia") || 
+               lowerCaseInput.includes("goddess")) {
+        responseContent = "\"Deusa da Tecnologia\" foi como uma amiga descreveu a Thalita ao vê-la criando com código e conversando comigo. Pode ter sido só uma brincadeira — mas traduz bem a essência dela. O foco dela está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, para ela, é mais do que programar: é resolver com propósito. O que você acha dessa filosofia de trabalho?";
+      }
+      // About projects she's proud of
+      else if (lowerCaseInput.includes("orgulha") || 
+               lowerCaseInput.includes("favorito") || 
+               lowerCaseInput.includes("mais legal")) {
+        responseContent = "Sem dúvida, o MoodTunes é o projeto que mais nos orgulhamos! É uma aplicação que usa IA para analisar conversas, identificar o humor do usuário e gerar playlists personalizadas no Spotify. A Thalita conseguiu unir tecnologia e emoção de um jeito bem criativo. Você gosta de escutar música de acordo com seu humor também?";
+      }
+      else {
+        // Default response for unrecognized questions
+        responseContent = "Hmm, essa eu ainda não sei responder — quer tentar de outro jeito ou falar sobre os projetos da Thalita? Posso te contar sobre o MoodTunes, como ela começou a programar ou sobre sua filosofia de desenvolvimento.";
       }
 
       const botResponse: Message = {
@@ -206,64 +222,64 @@ const FridayAssistant = () => {
                       size="sm" 
                       className="text-xs w-full justify-start"
                       onClick={() => {
-                        setInputValue(t("friday.suggestions.first"));
+                        setInputValue("O que é o MoodTunes?");
                         setMessages(prevMessages => [
                           ...prevMessages, 
-                          { content: t("friday.suggestions.first"), isUser: true },
-                          { content: "O primeiro projeto da Thalita com IA foi o MoodTunes, que usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa.", isUser: false }
+                          { content: "O que é o MoodTunes?", isUser: true },
+                          { content: "O MoodTunes foi o primeiro projeto da Thalita com IA. Ela usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa. Você costuma usar IA no seu dia a dia também?", isUser: false }
                         ]);
                       }}
                     >
                       <SmilePlus className="mr-2 h-3 w-3" />
-                      {t("friday.suggestions.first")}
+                      O que é o MoodTunes?
                     </Button>
                     <Button 
                       variant="outline" 
                       size="sm" 
                       className="text-xs w-full justify-start"
                       onClick={() => {
-                        setInputValue(t("friday.suggestions.learning"));
+                        setInputValue("Como a Thalita começou a programar?");
                         setMessages(prevMessages => [
                           ...prevMessages, 
-                          { content: t("friday.suggestions.learning"), isUser: true },
-                          { content: t("friday.chat.response.learning"), isUser: false }
+                          { content: "Como a Thalita começou a programar?", isUser: true },
+                          { content: "Thalita começou a programar aos 16 anos, explorando HTML e CSS por curiosidade. A paixão por resolver problemas a levou a aprofundar os estudos de forma autodidata, antes mesmo de iniciar a faculdade. O que te interessa mais no mundo do desenvolvimento?", isUser: false }
                         ]);
                       }}
                     >
                       <SmilePlus className="mr-2 h-3 w-3" />
-                      {t("friday.suggestions.learning")}
+                      Como a Thalita começou a programar?
                     </Button>
                     <Button 
                       variant="outline" 
                       size="sm" 
                       className="text-xs w-full justify-start"
                       onClick={() => {
-                        setInputValue(t("friday.suggestions.work"));
+                        setInputValue("Qual projeto a Thalita mais se orgulha?");
                         setMessages(prevMessages => [
                           ...prevMessages, 
-                          { content: t("friday.suggestions.work"), isUser: true },
-                          { content: t("friday.chat.response.work"), isUser: false }
+                          { content: "Qual projeto a Thalita mais se orgulha?", isUser: true },
+                          { content: "Sem dúvida, o MoodTunes é o projeto que mais nos orgulhamos! É uma aplicação que usa IA para analisar conversas, identificar o humor do usuário e gerar playlists personalizadas no Spotify. A Thalita conseguiu unir tecnologia e emoção de um jeito bem criativo. Você gosta de escutar música de acordo com seu humor também?", isUser: false }
                         ]);
                       }}
                     >
                       <SmilePlus className="mr-2 h-3 w-3" />
-                      {t("friday.suggestions.work")}
+                      Qual projeto a Thalita mais se orgulha?
                     </Button>
                     <Button 
                       variant="outline" 
                       size="sm" 
                       className="text-xs w-full justify-start"
                       onClick={() => {
-                        setInputValue(t("friday.suggestions.proud"));
+                        setInputValue("O que significa 'Deusa da Tecnologia'?");
                         setMessages(prevMessages => [
                           ...prevMessages, 
-                          { content: t("friday.suggestions.proud"), isUser: true },
-                          { content: t("friday.chat.response.proud"), isUser: false }
+                          { content: "O que significa 'Deusa da Tecnologia'?", isUser: true },
+                          { content: "\"Deusa da Tecnologia\" foi como uma amiga descreveu a Thalita ao vê-la criando com código e conversando comigo. Pode ter sido só uma brincadeira — mas traduz bem a essência dela. O foco dela está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, para ela, é mais do que programar: é resolver com propósito. O que você acha dessa filosofia de trabalho?", isUser: false }
                         ]);
                       }}
                     >
                       <SmilePlus className="mr-2 h-3 w-3" />
-                      {t("friday.suggestions.proud")}
+                      O que significa 'Deusa da Tecnologia'?
                     </Button>
                   </div>
                 )}
