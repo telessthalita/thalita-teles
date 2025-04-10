@@ -8,9 +8,12 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Footer = () => {
   const { t } = useLanguage();
   
-  const handleEmailClick = () => {
-    window.location.href = "mailto:telessthalita@gmail.com?subject=Contato via Portfolio&body=Olá Thalita, vi seu portfólio e gostaria de conversar!";
-  };
+ const handleEmailClick = () => {
+  window.open(
+    "mailto:telessthalita@gmail.com?subject=Contato via Portfolio&body=Olá Thalita, vi seu portfólio e gostaria de conversar!",
+    "_blank"
+  );
+};
 
   return (
     <footer className="bg-card py-8 border-t border-border">
@@ -39,13 +42,9 @@ const Footer = () => {
             >
               <Linkedin size={20} />
             </a>
-            <a
-              href="mailto:telessthalita@gmail.com?subject=Contato via Portfolio&body=Olá Thalita, vi seu portfólio e gostaria de conversar!"
-              className="text-foreground/80 hover:text-primary transition-colors"
-              aria-label="Enviar email para Thalita Teles"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+             <a href="mailto:telessthalita@gmail.com?subject=Contato via Portfolio&body=Olá Thalita, vi seu portfólio e gostaria de conversar!">
+               <Mail className="mr-2" size={16} /> {t("footer.contactMe")}
+             </a>
               <Mail size={20} />
             </a>
           </div>
