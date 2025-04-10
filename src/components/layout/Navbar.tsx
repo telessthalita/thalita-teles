@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
-import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -69,14 +68,12 @@ const Navbar = () => {
           </button>
           <div className="flex items-center gap-2">
             <LanguageSelector />
-            <ThemeToggle />
           </div>
         </nav>
 
         {/* Mobile Navigation Button */}
         <div className="flex md:hidden items-center gap-4">
           <LanguageSelector />
-          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
@@ -132,7 +129,7 @@ const Navbar = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/thalita-tees"
+                href="https://www.linkedin.com/in/telessthalita/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/80 hover:text-primary transition-colors"
