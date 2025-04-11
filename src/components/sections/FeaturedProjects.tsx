@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "RaceTrack",
     description: "Front-end com dados de F1 em tempo real. Exibe estatísticas, comparações entre pilotos e equipes.",
-    link: "https://moodtunes-xtcy.onrender.com",
+    link: "https://race-track.onrender.com/",
     icon: <LineChart className="w-10 h-10 text-primary" />,
   },
   {
