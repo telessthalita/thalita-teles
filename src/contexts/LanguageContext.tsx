@@ -22,13 +22,12 @@ const translations = {
     "nav.skills": "Habilidades",
     "nav.projects": "Projetos",
     "nav.github": "GitHub",
-    
+
     // Hero
     "hero.subtitle": "Desenvolvedora Fullstack | Futura Engenheira de IA",
-    "hero.description": "“Deusa da Tecnologia” foi como uma amiga me descreveu ao me ver criando com código e conversando com minha IA pessoal. Pode ter sido só uma brincadeira — mas traduz bem minha essência. Meu foco está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, pra mim, é mais do que programar: é resolver com propósito.",
     "hero.btn.path": "Meu Caminho",
     "hero.btn.projects": "Projetos",
-    
+
     // GitHub
     "github.title": "Projetos no GitHub",
     "github.description": "Confira meus repositórios do GitHub, atualizados em tempo real.",
@@ -37,15 +36,15 @@ const translations = {
     "github.loading": "Carregando repositórios...",
     "github.error": "Não foi possível carregar os repositórios do GitHub.",
     "github.tryAgain": "Tentar novamente",
-    
+
     // Footer
     "footer.developedBy": "Desenvolvido por",
     "footer.and": "e",
     "footer.friday": "Friday",
     "footer.yourAI": "sua IA pessoal.",
-    "footer.reachedEnd": "Se você chegou até aqui, provavelmente já percebeu que não sou só código. Vamos conversar?",
     "footer.contactMe": "Fale comigo",
-    
+    "footer.emailCopied": "E-mail copiado!",
+
     // Friday Assistant
     "friday.welcome": "Olá! Sou a Friday, IA pessoal da Thalita — e entre nós, ela é genial (mas vive dizendo que sou eu que faço a mágica).\n\nEm 2025, ela começou a mergulhar de cabeça em IA com projetos de LLMs e matemática aplicada.\nEsse portfólio que você está vendo? Foi um dos primeiros passos dela!\n\nQuer saber mais sobre a jornada, os projetos ou como ela hackeou a vida até aqui?\nManda ver. Eu conto tudo (ou quase tudo).",
     "friday.suggestions.first": "Qual foi o primeiro projeto com IA da Thalita?",
@@ -67,13 +66,13 @@ const translations = {
     "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.github": "GitHub",
-    
+
     // Hero
     "hero.subtitle": "Fullstack Developer | Future AI Engineer",
     "hero.description": "Transforming ideas into code and building intelligent solutions for the digital future.",
     "hero.btn.path": "My Journey",
     "hero.btn.projects": "Projects",
-    
+
     // GitHub
     "github.title": "GitHub Projects",
     "github.description": "Check out my GitHub repositories, updated in real-time.",
@@ -82,7 +81,7 @@ const translations = {
     "github.loading": "Loading repositories...",
     "github.error": "Could not load GitHub repositories.",
     "github.tryAgain": "Try again",
-    
+
     // Footer
     "footer.developedBy": "Developed by",
     "footer.and": "and",
@@ -90,7 +89,8 @@ const translations = {
     "footer.yourAI": "your personal AI.",
     "footer.reachedEnd": "If you've made it this far, you've probably realized I'm not just code. Let's talk?",
     "footer.contactMe": "Contact me",
-    
+    "footer.emailCopied": "Email copied!",
+
     // Friday Assistant
     "friday.welcome": "Hi! I'm Friday, Thalita's personal AI — and between us, she's brilliant (but she keeps saying I'm the one doing the magic).\n\nIn 2025, she started diving deep into AI with LLM projects and applied mathematics.\nThis portfolio you're seeing? It was one of her first steps!\n\nWant to know more about her journey, projects, or how she hacked her way here?\nFire away. I'll tell you everything (or almost everything).",
     "friday.suggestions.first": "What was Thalita's first AI project?",
@@ -112,13 +112,13 @@ const translations = {
     "nav.skills": "Habilidades",
     "nav.projects": "Proyectos",
     "nav.github": "GitHub",
-    
+
     // Hero
     "hero.subtitle": "Desarrolladora Fullstack | Futura Ingeniera de IA",
     "hero.description": "Transformando ideas en código y construyendo soluciones inteligentes para el futuro digital.",
     "hero.btn.path": "Mi Camino",
     "hero.btn.projects": "Proyectos",
-    
+
     // GitHub
     "github.title": "Proyectos en GitHub",
     "github.description": "Echa un vistazo a mis repositorios de GitHub, actualizados en tiempo real.",
@@ -127,7 +127,7 @@ const translations = {
     "github.loading": "Cargando repositorios...",
     "github.error": "No se pudieron cargar los repositorios de GitHub.",
     "github.tryAgain": "Intentar de nuevo",
-    
+
     // Footer
     "footer.developedBy": "Desarrollado por",
     "footer.and": "y",
@@ -135,7 +135,8 @@ const translations = {
     "footer.yourAI": "tu IA personal.",
     "footer.reachedEnd": "Si has llegado hasta aquí, probablemente ya te has dado cuenta de que no soy solo código. ¿Hablamos?",
     "footer.contactMe": "Contáctame",
-    
+    "footer.emailCopied": "¡Correo copiado!",
+
     // Friday Assistant
     "friday.welcome": "¡Hola! Soy Friday, la IA personal de Thalita — y entre nosotros, ella es brillante (pero sigue diciendo que soy yo quien hace la magia).\n\nEn 2025, comenzó a sumergirse profundamente en IA con proyectos de LLM y matemáticas aplicadas.\n¿Este portafolio que estás viendo? ¡Fue uno de sus primeros pasos!\n\n¿Quieres saber más sobre su trayectoria, proyectos o cómo llegó hasta aquí?\nAdelante. Te cuento todo (o casi todo).",
     "friday.suggestions.first": "¿Cuál fue el primer proyecto de IA de Thalita?",
