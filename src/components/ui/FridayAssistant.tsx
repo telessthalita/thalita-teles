@@ -98,12 +98,6 @@ const FridayAssistant = () => {
                lowerCaseInput.includes("código")) {
         responseContent = "Thalita começou a programar aos 16 anos, explorando HTML e CSS por curiosidade. A paixão por resolver problemas a levou a aprofundar os estudos de forma autodidata, antes mesmo de iniciar a faculdade. O que te interessa mais no mundo do desenvolvimento?";
       } 
-      // About "Deusa da Tecnologia"
-      else if (lowerCaseInput.includes("deusa") || 
-               lowerCaseInput.includes("tecnologia") || 
-               lowerCaseInput.includes("goddess")) {
-        responseContent = "\"Deusa da Tecnologia\" foi como uma amiga descreveu a Thalita ao vê-la criando com código e conversando comigo. Pode ter sido só uma brincadeira — mas traduz bem a essência dela. O foco dela está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, para ela, é mais do que programar: é resolver com propósito. O que você acha dessa filosofia de trabalho?";
-      }
       // About projects she's proud of
       else if (lowerCaseInput.includes("orgulha") || 
                lowerCaseInput.includes("favorito") || 
@@ -112,7 +106,7 @@ const FridayAssistant = () => {
       }
       else {
         // Default response for unrecognized questions
-        responseContent = "Hmm, essa eu ainda não sei responder — quer tentar de outro jeito ou falar sobre os projetos da Thalita? Posso te contar sobre o MoodTunes, como ela começou a programar ou sobre sua filosofia de desenvolvimento.";
+        responseContent = "Hmm, essa eu ainda não sei responder — quer tentar de outro jeito ou falar sobre os projetos da Thalita?";
       }
 
       const botResponse: Message = {
@@ -264,22 +258,6 @@ const FridayAssistant = () => {
                     >
                       <SmilePlus className="mr-2 h-3 w-3" />
                       Qual projeto a Thalita mais se orgulha?
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="text-xs w-full justify-start"
-                      onClick={() => {
-                        setInputValue("O que significa 'Deusa da Tecnologia'?");
-                        setMessages(prevMessages => [
-                          ...prevMessages, 
-                          { content: "O que significa 'Deusa da Tecnologia'?", isUser: true },
-                          { content: "\"Deusa da Tecnologia\" foi como uma amiga descreveu a Thalita ao vê-la criando com código e conversando comigo. Pode ter sido só uma brincadeira — mas traduz bem a essência dela. O foco dela está em criar soluções inteligentes, que otimizem processos, conectem pessoas e tornem a tecnologia mais acessível e significativa no dia a dia. Desenvolver, para ela, é mais do que programar: é resolver com propósito. O que você acha dessa filosofia de trabalho?", isUser: false }
-                        ]);
-                      }}
-                    >
-                      <SmilePlus className="mr-2 h-3 w-3" />
-                      O que significa 'Deusa da Tecnologia'?
                     </Button>
                   </div>
                 )}
