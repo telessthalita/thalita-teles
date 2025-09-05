@@ -24,7 +24,7 @@ const translations = {
     "nav.github": "GitHub",
 
     // Hero
-    "hero.subtitle": "Desenvolvedora Fullstack | Futura Engenheira de IA",
+    "hero.subtitle": "Desenvolvedora Fullstack | Engenheira de IA",
     "hero.btn.path": "Meu Caminho",
     "hero.btn.projects": "Projetos",
 

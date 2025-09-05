@@ -87,10 +87,10 @@ const FridayAssistant = () => {
           lowerCaseInput.includes("moodtunes") || 
           lowerCaseInput.includes("ia") || 
           lowerCaseInput.includes("mood") || 
-          lowerCaseInput.includes("gemini") ||
+          lowerCaseInput.includes("groqcloud") ||
           lowerCaseInput.includes("spotify")) {
-        responseContent = "O MoodTunes foi o primeiro projeto da Thalita com IA. Ela usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa. Você costuma usar IA no seu dia a dia também?";
-      } 
+        responseContent = "O MoodTunes foi o primeiro projeto da Thalita com IA. Ela usa o GroqCloud para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa. Você costuma usar IA no seu dia a dia também?";
+      }
       // Learning programming
       else if (lowerCaseInput.includes("aprendeu") || 
                lowerCaseInput.includes("programar") || 
@@ -106,7 +106,7 @@ const FridayAssistant = () => {
       }
       else {
         // Default response for unrecognized questions
-        responseContent = "Hmm, essa eu ainda não sei responder — quer tentar de outro jeito ou falar sobre os projetos da Thalita?";
+        responseContent = "Hmm, essa eu ainda não sei responder - quer tentar de outro jeito ou falar sobre os projetos da Thalita?";
       }
 
       const botResponse: Message = {
@@ -220,7 +220,7 @@ const FridayAssistant = () => {
                         setMessages(prevMessages => [
                           ...prevMessages, 
                           { content: "O que é o MoodTunes?", isUser: true },
-                          { content: "O MoodTunes foi o primeiro projeto da Thalita com IA. Ela usa o Gemini para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa. Você costuma usar IA no seu dia a dia também?", isUser: false }
+                          { content: "O MoodTunes foi o primeiro projeto da Thalita com IA. Ela usa o GroqCloud para processar conversas, entender o humor do usuário e criar playlists personalizadas no Spotify. Foi um marco importante na jornada dela com tecnologias de IA generativa. Você costuma usar IA no seu dia a dia também?", isUser: false }
                         ]);
                       }}
                     >

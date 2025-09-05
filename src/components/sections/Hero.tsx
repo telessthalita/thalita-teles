@@ -30,7 +30,7 @@ const Hero = () => {
             {t("hero.subtitle")}
           </h2>
           <p className="text-muted-foreground mb-10 max-w-2xl">
-            Sou conhecida por estar sempre um passo à frente. Sim, isso às vezes vem com uma dose de ansiedade — mas aprendi a transformá-la em combustível para continuar criando com propósito.
+            Sou conhecida por estar sempre um passo à frente. Sim, isso às vezes vem com uma dose de ansiedade - mas aprendi a transformá-la em combustível para continuar criando com propósito.
 Meu foco está em desenvolver soluções que ampliem a conexão entre pessoas e tecnologia, explorando novas formas de interação entre humanos e inteligência artificial.
 Acredito que o futuro da tecnologia não está apenas em programar, mas em conectar, automatizar e potencializar o que já existe.
 

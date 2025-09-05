@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     title: "MoodTunes",
     description: "Chatbot de IA com integração ao Spotify. Utiliza GroqCloud para interpretar o humor do usuário e criar playlists personalizadas.",
-    link: "https://moodtunes.lovable.app",
+    link: "https://moodtuness.lovable.app/",
     icon: <Music className="w-10 h-10 text-primary" />,
   },
   {
