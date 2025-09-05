@@ -37,7 +37,7 @@ const projects = [
     id: 5,
     title: "Brisa da Barra",
     description: "Catálogo virtual da Tabacaria Brisa da Barra. Explore os produtos, escolha seus favoritos e finalize sua compra de forma prática pelo WhatsApp.",
-    link: "https://spotify-ykmg.onrender.com",
+    link: "https://tabacariabrisadabarra.com/",
     icon: <ShoppingBag className="w-10 h-10 text-primary" />,
  }
 ];
