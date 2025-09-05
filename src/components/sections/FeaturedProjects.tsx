@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "RaceTrack",
     description: "Front-end com dados de F1 em tempo real. Exibe estatísticas, comparações entre pilotos e equipes.",
-    link: "https://race-track.onrender.com/",
+    link: "https://race-tracker-live.onrender.com/",
     icon: <LineChart className="w-10 h-10 text-primary" />,
   },
   {
@@ -33,6 +33,13 @@ const projects = [
     link: "https://spotify-ykmg.onrender.com",
     icon: <Music className="w-10 h-10 text-primary" />,
   },
+  {
+    id: 5,
+    title: "Brisa da Barra",
+    description: "Catálogo virtual da Tabacaria Brisa da Barra. Explore os produtos, escolha seus favoritos e finalize sua compra de forma prática pelo WhatsApp.",
+    link: "https://spotify-ykmg.onrender.com",
+    icon: <ShoppingBag className="w-10 h-10 text-primary" />,
+ }
 ];
 
 const FeaturedProjects = () => {
