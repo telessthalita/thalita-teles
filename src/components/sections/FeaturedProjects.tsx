@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Code, Music, LineChart } from "lucide-react";
+import { ExternalLink, Code, Music, LineChart, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"; // Certifique-se de ter esse Carousel
 
