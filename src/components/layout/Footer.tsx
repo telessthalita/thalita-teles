@@ -7,7 +7,7 @@ const Footer = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText("telessthalita@gmail.com").then(() => {
+    navigator.clipboard.writeText("telessthalita@outlook.com").then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
